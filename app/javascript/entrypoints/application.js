@@ -32,6 +32,7 @@ console.log(
 
 import { createApp, h } from 'vue';
 import { createInertiaApp } from '@inertiajs/inertia-vue3';
+import { InertiaProgress } from '@inertiajs/progress';
 import './application.css';
 
 createInertiaApp({
@@ -43,3 +44,5 @@ createInertiaApp({
       .mount(el);
   },
 });
+
+InertiaProgress.init();
